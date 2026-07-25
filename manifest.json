@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "KSP Brave Compatibility",
+  "version": "1.0.0",
+  "description": "Removes Brave brand client hints only for ksp.co.il so KSP does not return HTTP 403.",
+  "permissions": [
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://ksp.co.il/*",
+    "https://*.ksp.co.il/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ksp_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

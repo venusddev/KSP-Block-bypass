@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "priority": 100,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "sec-ch-ua",
+          "operation": "remove"
+        },
+        {
+          "header": "sec-ch-ua-full-version",
+          "operation": "remove"
+        },
+        {
+          "header": "sec-ch-ua-full-version-list",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "requestDomains": [
+        "ksp.co.il"
+      ],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+        "webtransport",
+        "webbundle",
+        "other"
+      ]
+    }
+  }
+]
