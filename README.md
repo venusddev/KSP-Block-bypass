@@ -12,7 +12,7 @@ modify requests to other sites.
 1. Open `brave://extensions`.
 2. Turn on **Developer mode**.
 3. Click **Load unpacked**.
-4. Select the `path\to\ksp-brave-compat` folder.
+4. Select the `path\to\source code folder` folder.
 5. Reload `https://ksp.co.il/web/`.
 
 Keep this folder in place while the extension is installed. To remove the
